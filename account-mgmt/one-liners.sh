@@ -6,9 +6,9 @@ op user list
 
 op user list --format=json
 
-op item get mysql
+op item get Instagram
 
-op item get sqlite --fields username,password
+op item get Instagram --fields username,password
 
 # get UUIDs of all login items and assign to array called loginIDs
 loginIDs=($(op item list --categories Login --format=json | jq -r '.[].id'))
