@@ -11,6 +11,12 @@
       "name": "password",
       "type": "P",
       "value": ""
+    },
+    {
+      "k": "string",
+      "n": "employee-id",
+      "t": "employee id",
+      "value": ""
     }
   ],
   "notesPlain": "",

@@ -2,7 +2,7 @@
 
 
 # Generate lists of users in Terminal
-op user list
+op user list --account michaelscottpapercompany
 
 op user list --format=json
 
