@@ -55,6 +55,11 @@ op vault group grant --vault "Avengers Project" --group "The Avengers" --permiss
 # give our leader some advanced permissions
 op vault user grant --vault "Avengers Project" --user "Nick Fury" --permissions $admin_permissions
 
+# Create a login for the Avengers website administrator and share it
+op item create --category=Login --title="Avengers Website Admin" --vault="Avengers Project" username="Agent_Colson" --url="https://1password.com" --generate-password
+
+op item share "Avengers Website Admin" --vault "Avengers Project" --expiry=12h40m34s
+
 # Create a document item with a proposed website banner
 cd ~/op-cli2-demo/account-mgmt
 op document create 'banner.jpg' --title "Proposed website banner" --vault "Avengers Project"
