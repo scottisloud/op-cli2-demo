@@ -3,7 +3,7 @@
 ###
 # One Liners
 ###
-# Generate lists of users in Terminal
+# Generate lists of users in Terminal, This is a really great script. 
 op user list --account michaelscottpapercompany
 
 op user list --format=json
