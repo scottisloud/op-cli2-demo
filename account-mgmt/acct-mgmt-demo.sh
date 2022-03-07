@@ -4,6 +4,7 @@
 # One Liners
 ###
 # Generate lists of users in Terminal
+cd ~/op-cli2-demo/account-mgmt
 op user list --account michaelscottpapercompany
 
 op user list --format=json
@@ -42,12 +43,13 @@ op group user list "The Avengers"
 ###
 # VAULT MANAGEMENT
 ###
-# Create some "permissions templates"
-user_permissions=view_items,view_and_copy_passwords,view_item_history
-admin_permissions=view_items,view_and_copy_passwords,view_item_history,create_items,edit_items,archive_items,delete_items,import_items,export_items,print_items
 
 # create a vault with all the super hero secrets
 op vault create "Avengers Project" --description "Info to support team of heroes who keep the world safe"
+
+# Create some "permissions templates"
+user_permissions=view_items,view_and_copy_passwords,view_item_history
+admin_permissions=view_items,view_and_copy_passwords,view_item_history,create_items,edit_items,archive_items,delete_items,import_items,export_items,print_items
 
 # give the heroes view-related permissions
 op vault group grant --vault "Avengers Project" --group "The Avengers" --permissions $user_permissions
