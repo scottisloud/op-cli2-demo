@@ -33,7 +33,7 @@ echo $avengers
 for avenger in $avengers; do op group user grant --group "The Avengers" --user $avenger; done 
 
 # invite a fearless leader to the team
-op user invite --name "Nick Fury" --email "scott.lougheed+895445624@agilebits.com"
+op user provision --name "Nick Fury" --email "scott.lougheed+895445624@agilebits.com"
 
 # add that leader to the Avengers group
 op group user grant --group "The Avengers" --user "Nick Fury"
